@@ -18,3 +18,15 @@ body {
   font-weight: 600;
   color: #2d3436;
 }
+
+.result-wrapper {
+  height: 100px;
+  background: grey;
+  width: calc(100% - 16px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  padding: 0 8px;
+}
