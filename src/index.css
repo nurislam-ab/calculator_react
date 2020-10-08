@@ -30,3 +30,21 @@ body {
   font-weight: 600;
   padding: 0 8px;
 }
+<<<<<<< HEAD
+=======
+
+
+.btn-groups-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 100px;
+}
+>>>>>>> 0b2e67c... Add styles for the buttons panel
