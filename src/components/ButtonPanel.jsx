@@ -5,34 +5,34 @@ import Button from './Button';
 const ButtonPanel = () => {
   return (
     <div className='btn-groups-wrapper'>
-      <div className="group-1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
+      <div className="group-1 btn-group">
+        <Button name="AC" color='#E0E0E0'/>
+        <Button name="+/-" color='#E0E0E0'/>
+        <Button name="%" color='#E0E0E0'/>
+        <Button name="÷"/>
       </div>
-      <div className="group-2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="x" />
+      <div className="group-2 btn-group">
+        <Button name="7" color='#E0E0E0'/>
+        <Button name="8" color='#E0E0E0'/>
+        <Button name="9" color='#E0E0E0'/>
+        <Button name="x"/>
       </div>
-      <div className="group-3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
+      <div className="group-3 btn-group">
+        <Button name="4" color='#E0E0E0'/>
+        <Button name="5" color='#E0E0E0'/>
+        <Button name="6" color='#E0E0E0'/>
+        <Button name="-"/>
       </div>
-      <div className="group-4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
+      <div className="group-4 btn-group">
+        <Button name="1" color='#e0e0e0'/>
+        <Button name="2" color='#E0E0E0'/>
+        <Button name="3" color='#E0E0E0'/>
+        <Button name="+"/>
       </div>
-      <div className="group-5">
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
+      <div className="group-5 btn-group">
+        <Button name="0" color='#E0E0E0' wide={true}/>
+        <Button name="." color='#E0E0E0'/>
+        <Button name="="/>
       </div>
     </div>
   )
