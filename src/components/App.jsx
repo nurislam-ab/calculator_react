@@ -9,4 +9,18 @@ const App = () => (
   </div>
 );
 
+<<<<<<< HEAD
 export default App;
+=======
+  render() {
+    return (
+      <div className='calc-container'>
+        <Display />
+        <ButtonPanel />
+      </div>
+    )
+  }
+}
+
+export default App;
+>>>>>>> 23c235e... Fix typo mistake
