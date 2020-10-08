@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Display = ({result}) => {
   return (
-    <div>
+    <div className='result-wrapper'>
       {result}
     </div>
   );
