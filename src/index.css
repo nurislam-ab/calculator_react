@@ -23,14 +23,13 @@ body {
   height: 100px;
   background: grey;
   width: calc(100% - 16px);
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   font-weight: 600;
   padding: 0 8px;
 }
-
 
 .btn-groups-wrapper {
   display: flex;
@@ -46,7 +45,6 @@ body {
   height: 100px;
 }
 
-
 .btn-group > div {
   text-align: center;
   border: 2px solid #b2bec3;
@@ -54,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #000000;
+  color: #000;
 }
 
 .btn-group > div:first-child {
