@@ -23,7 +23,7 @@ body {
   height: 100px;
   background: grey;
   width: calc(100% - 16px);
-  color: #ffffff;
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -44,3 +44,24 @@ body {
   align-items: center;
   height: 100px;
 }
+<<<<<<< HEAD
+=======
+
+.btn-group > div {
+  text-align: center;
+  border: 2px solid #b2bec3;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.btn-group > div:first-child {
+  border-left: none;
+}
+
+.btn-group > div:last-child {
+  border-right: none;
+}
+>>>>>>> 9860549... Fix offences
