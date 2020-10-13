@@ -1,4 +1,4 @@
-import Big from 'big.js'
+import Big from 'big.js';
 
 const operate = (nOne, nTwo, operation) => {
   const bOne = Big(nOne);
@@ -29,7 +29,6 @@ const operate = (nOne, nTwo, operation) => {
   }
 
   return result;
-}
+};
 
-
-export { operate };
+export default operate;
