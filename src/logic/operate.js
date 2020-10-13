@@ -19,7 +19,7 @@ const operate = (nOne, nTwo, operation) => {
       result = bTwo === '0' ? 'undefined' : bOne.div(bTwo);
       break;
     case '%':
-      result = bOne.mul(bTwo).div(100);
+      result = bOne.div(100);
       break;
     case '+/-':
       result = bOne.mul(-1);
