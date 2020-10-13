@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 const Button = ({name, color, wide}) => {
   
-  
   const styles = (btnWidth, btnColor) => {
     const wideValue = (btnWidth) ? '2 1 0.5%' : '1';
     
