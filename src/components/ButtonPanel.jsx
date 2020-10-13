@@ -10,9 +10,22 @@ const ButtonPanel = () => {
     ['0', '.', '='],
   ];
 
-  const btnsGroup = (btnGroup => btnGroup.map(btn => <Button key={btn[0]} name={btn} />));
+  const orangeBtns = ['÷', 'x', '-', '+', '='];
 
-  const btnsArr = btnNamesArr.map(group => <div key={group[0]}>{btnsGroup(group)}</div>);
+  const btnsGroup = (btnGroup => btnGroup.map(btn => {
+    let btnComponent;
+    if (orangeBtns.includes(btn)) {
+      btnComponent = <Button key={btn[0]} name={btn} />;
+    } else if (btn === '0') {
+      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" wide />;
+    } else {
+      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" />;
+    }
+
+    return btnComponent;
+  }));
+
+  const btnsArr = btnNamesArr.map(group => <div key={group[0]} className="btn-group">{btnsGroup(group)}</div>);
 
   return (
     <div className="btn-groups-wrapper">{btnsArr}</div>

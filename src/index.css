@@ -1,6 +1,5 @@
 body {
   height: 100vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,6 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: #2d3436;
+  border: 2px solid #b2bec3;
 }
 
 .result-wrapper {
@@ -53,6 +53,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #000;
+  border-left: 0;
 }
 
 .btn-group > div:first-child {
