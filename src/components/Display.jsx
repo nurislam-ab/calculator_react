@@ -1,13 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Display = ({result}) => {
-  return (
-    <div className='result-wrapper'>
-      {result}
-    </div>
-  );
-}
+const Display = ({ result }) => (
+  <div className="result-wrapper">
+    {result}
+  </div>
+);
 
 Display.defaultProps = {
   result: '0',
