@@ -12,7 +12,7 @@ const ButtonPanel = () => {
 
   const btnsGroup = (btnGroup => btnGroup.map(btn => <Button key={btn[0]} name={btn} />));
 
-  const btnsArr = btnNamesArr.map(group => <div key={group[0]}>{btnsGroup(group)}</div>);
+  const btnsArr = btnNamesArr.map(group => <div key={group[0]} className="btn-group">{btnsGroup(group)}</div>);
 
   return (
     <div className="btn-groups-wrapper">{btnsArr}</div>
