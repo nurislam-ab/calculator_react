@@ -46,9 +46,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-<<<<<<< HEAD
-This project is [MIT](LICENSE) licensed.
-=======
 This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
 ### Analyzing the Bundle Size
@@ -73,4 +70,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 [Live demo](https://agile-coast-09229.herokuapp.com/)
->>>>>>> 9860549... Fix offences

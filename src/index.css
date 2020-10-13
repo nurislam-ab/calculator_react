@@ -44,8 +44,6 @@ body {
   align-items: center;
   height: 100px;
 }
-<<<<<<< HEAD
-=======
 
 .btn-group > div {
   text-align: center;
@@ -64,4 +62,3 @@ body {
 .btn-group > div:last-child {
   border-right: none;
 }
->>>>>>> 9860549... Fix offences
