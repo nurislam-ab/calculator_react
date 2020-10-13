@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({ name, color, wide }) => {
   const styles = (btnWidth, btnColor) => {
-    const wideValue = (btnWidth) ? '2 1 0.5%' : '1';
+    const wideValue = (btnWidth) ? 'calc(50% + 3px)' : '25%';
 
     return ({
       flex: wideValue,
