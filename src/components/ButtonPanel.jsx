@@ -1,41 +1,22 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import Button from './Button';
 
 const ButtonPanel = () => {
+  const btnNamesArr = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
+
+  const btnsGroup = (btnGroup => btnGroup.map(btn => <Button key={btn[0]} name={btn} />));
+
+  const btnsArr = btnNamesArr.map(group => <div key={group[0]}>{btnsGroup(group)}</div>);
+
   return (
-    <div className='btn-groups-wrapper'>
-      <div className="group-1">
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
-      </div>
-      <div className="group-2">
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="x" />
-      </div>
-      <div className="group-3">
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
-      </div>
-      <div className="group-4">
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
-      </div>
-      <div className="group-5">
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
-      </div>
-    </div>
-  )
-}
+    <div className="btn-groups-wrapper">{btnsArr}</div>
+  );
+};
 
 export default ButtonPanel;
