@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({name}) => {
-  return (
-    <div>
-      {name}
-    </div>
-  );
-}
+const Button = ({ name }) => (
+  <div>
+    {name}
+  </div>
+);
 
 Button.propTypes = {
   name: PropTypes.string,
-}
+};
+
+Button.defaultProps = {
+  name: '0',
+};
 
 export default Button;
