@@ -45,7 +45,7 @@ body {
   height: 100px;
 }
 
-.btn-group > div {
+.btn-group > button {
   text-align: center;
   border: 2px solid #b2bec3;
   height: 100%;
