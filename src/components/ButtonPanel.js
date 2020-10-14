@@ -18,11 +18,11 @@ const ButtonPanel = props => {
   const btnsGroup = (btnGroup => btnGroup.map(btn => {
     let btnComponent;
     if (orangeBtns.includes(btn)) {
-      btnComponent = <Button key={btn[0]} name={btn} clickHandler={handeClick} />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} />;
     } else if (btn === '0') {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" wide clickHandler={handeClick} />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} color="#E0E0E0" wide />;
     } else {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" clickHandler={handeClick} />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} color="#E0E0E0" />;
     }
 
     return btnComponent;
