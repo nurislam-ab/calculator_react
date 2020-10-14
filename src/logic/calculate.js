@@ -14,7 +14,7 @@ const calculate = ((calculator, btnName) => {
       next = next ? operate(next, '1', '+/-') : next;
       break;
     case ['÷', 'x', '+', '-'].includes(btnName) && btnName:
-      if (operation) {
+      if (operation && next) {
         total = operate(total, next, operation);
         next = null;
         operation = btnName;
