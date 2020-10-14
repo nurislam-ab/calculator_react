@@ -28,7 +28,7 @@ const operate = (nOne, nTwo, operation) => {
       result = '';
   }
 
-  return result;
+  return result.toString();
 };
 
 export default operate;
