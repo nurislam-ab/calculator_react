@@ -1,7 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name, color, wide }) => {
+const Button = props => {
+  const {
+    name,
+    color,
+    wide,
+    clickHandler,
+  } = props;
+
   const styles = (btnWidth, btnColor) => {
     const wideValue = (btnWidth) ? 'calc(50% + 3px)' : '25%';
 
@@ -10,6 +17,8 @@ const Button = ({ name, color, wide }) => {
       backgroundColor: btnColor,
     });
   };
+
+  const handleClick = (btnName => clickHandler(btnName));
 
   return (
     <div className="btn" style={styles(wide, color)}>
@@ -22,6 +31,7 @@ Button.propTypes = {
   name: PropTypes.string,
   color: PropTypes.string,
   wide: PropTypes.bool,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
