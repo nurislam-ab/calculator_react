@@ -13,20 +13,20 @@ const ButtonPanel = props => {
 
   const orangeBtns = ['÷', 'x', '-', '+', '='];
 
+  const handeClick = (btnName => props.clickHandler(btnName));
+
   const btnsGroup = (btnGroup => btnGroup.map(btn => {
     let btnComponent;
     if (orangeBtns.includes(btn)) {
-      btnComponent = <Button key={btn[0]} name={btn} />;
+      btnComponent = <Button key={btn[0]} name={btn} clickHandler={handeClick} />;
     } else if (btn === '0') {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" wide />;
+      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" wide clickHandler={handeClick} />;
     } else {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" />;
+      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" clickHandler={handeClick} />;
     }
 
     return btnComponent;
   }));
-
-  const handeClick = (btnName => props.clickHandler(btnName));
 
   const btnsArr = btnNamesArr.map(group => <div key={group[0]} className="btn-group">{btnsGroup(group)}</div>);
 
