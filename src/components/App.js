@@ -25,7 +25,7 @@ class App extends React.Component {
 
     return (
       <div className="calc-container">
-        <Display result={total || next || '0'} />
+        <Display result={next || total || '0'} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
