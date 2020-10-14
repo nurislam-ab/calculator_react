@@ -21,21 +21,20 @@ const Button = props => {
   const handleClick = (btnName => clickHandler(btnName));
 
   return (
-    <div className="btn" style={styles(wide, color)} onClick={e => handleClick(e.target.value)}>
+    <button className="btn" style={styles(wide, color)} onClick={e => handleClick(e.target.value)} value={name} type="submit">
       {name}
-    </div>
+    </button>
   );
 };
 
 Button.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   color: PropTypes.string,
   wide: PropTypes.bool,
   clickHandler: PropTypes.func.isRequired,
 };
 
 Button.defaultProps = {
-  name: '0',
   color: '#f5913e',
   wide: false,
 };
