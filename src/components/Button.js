@@ -10,10 +10,10 @@ const Button = props => {
   } = props;
 
   const styles = (btnWidth, btnColor) => {
-    const wideValue = (btnWidth) ? 'calc(50% + 3px)' : '25%';
+    const wideValue = (btnWidth) ? '50%' : '25%';
 
     return ({
-      flex: wideValue,
+      width: wideValue,
       backgroundColor: btnColor,
     });
   };
