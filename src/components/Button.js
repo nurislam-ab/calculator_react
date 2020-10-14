@@ -21,7 +21,7 @@ const Button = props => {
   const handleClick = (btnName => clickHandler(btnName));
 
   return (
-    <div className="btn" style={styles(wide, color)}>
+    <div className="btn" style={styles(wide, color)} onClick={e => handleClick(e.target.value)}>
       {name}
     </div>
   );
