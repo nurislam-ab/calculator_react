@@ -16,13 +16,14 @@ class App extends React.Component {
   }
 
   handleClick(btnName) {
-    this.setState(calculate(btnName));
+    const calcData = calculate(this.state, btnName);
+    this.setState(calcData);
   }
 
   render() {
     return (
       <div className="calc-container">
-        <Display />
+        <Display total={this.state.total} />
         <ButtonPanel />
       </div>
     );
