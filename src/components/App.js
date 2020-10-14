@@ -22,9 +22,10 @@ class App extends React.Component {
 
   render() {
     const { total, next } = this.state;
+
     return (
       <div className="calc-container">
-        <Display result={total || next} />
+        <Display result={total || next || '0'} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>
     );
