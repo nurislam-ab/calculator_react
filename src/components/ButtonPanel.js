@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = props => {
   const btnNamesArr = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', 'x'],
@@ -25,11 +26,17 @@ const ButtonPanel = () => {
     return btnComponent;
   }));
 
+  const handeClick = (btnName => props.clickHandler(btnName));
+
   const btnsArr = btnNamesArr.map(group => <div key={group[0]} className="btn-group">{btnsGroup(group)}</div>);
 
   return (
     <div className="btn-groups-wrapper">{btnsArr}</div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;
