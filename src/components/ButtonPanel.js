@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonPanel = () => {
+const ButtonPanel = props => {
   const btnNamesArr = [
     ['AC', '+/-', '%', '÷'],
     ['7', '8', '9', 'x'],
@@ -12,14 +13,16 @@ const ButtonPanel = () => {
 
   const orangeBtns = ['÷', 'x', '-', '+', '='];
 
+  const handeClick = (btnName => props.clickHandler(btnName));
+
   const btnsGroup = (btnGroup => btnGroup.map(btn => {
     let btnComponent;
     if (orangeBtns.includes(btn)) {
-      btnComponent = <Button key={btn[0]} name={btn} />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} />;
     } else if (btn === '0') {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" wide />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} color="#E0E0E0" wide />;
     } else {
-      btnComponent = <Button key={btn[0]} name={btn} color="#E0E0E0" />;
+      btnComponent = <Button key={btn} name={btn} clickHandler={handeClick} color="#E0E0E0" />;
     }
 
     return btnComponent;
@@ -30,6 +33,10 @@ const ButtonPanel = () => {
   return (
     <div className="btn-groups-wrapper">{btnsArr}</div>
   );
+};
+
+ButtonPanel.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

@@ -1,5 +1,4 @@
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +44,7 @@ body {
   height: 100px;
 }
 
-.btn-group > div {
+.btn-group > button {
   text-align: center;
   border: 2px solid #b2bec3;
   height: 100%;
@@ -54,6 +53,8 @@ body {
   align-items: center;
   color: #000;
   border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
 }
 
 .btn-group > div:first-child {
